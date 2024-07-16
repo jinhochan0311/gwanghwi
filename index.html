@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Navigation with Bootstrap</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Voice Navigation</a>
+    </nav>
+  </header>
+
+  <main role="main" class="container">
+    <div class="jumbotron mt-5">
+      <h1 class="display-4">Voice Navigation Example</h1>
+      <p class="lead">Type something and click the button to hear it.</p>
+      <hr class="my-4">
+      <div class="form-group">
+        <label for="textInput">Enter text:</label>
+        <textarea class="form-control" id="textInput" rows="3" placeholder="Type something..."></textarea>
+      </div>
+      <button id="speakButton" class="btn btn-primary">Speak</button>
+    </div>
+  </main>
+
+  <footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+      <span class="text-muted">© 2024 Voice Navigation Example. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
